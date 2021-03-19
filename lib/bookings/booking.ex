@@ -1,17 +1,17 @@
 defmodule Flightex.Bookings.Booking do
-  @keys [:id, :data_completa, :cidade_origem, :cidade_destino, :id_usuario]
+  @keys [:id, :date, :from_city, :to_city, :user_id]
   @enforce_keys @keys
 
   defstruct @keys
 
-  def build(data_completa, cidade_origem, cidade_destino, id_usuario) do
+  def build(date, from_city, to_city, user_id) do
     {:ok,
      %__MODULE__{
        id: UUID.uuid4(),
-       data_completa: data_completa,
-       cidade_origem: cidade_origem,
-       cidade_destino: cidade_destino,
-       id_usuario: id_usuario
+       date: date,
+       from_city: from_city,
+       to_city: to_city,
+       user_id: user_id
      }}
   end
 end

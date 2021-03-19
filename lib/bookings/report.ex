@@ -18,10 +18,10 @@ defmodule Flightex.Bookings.Report do
 
   defp booking_string(
          %Booking{
-           id_usuario: user_id,
-           cidade_origem: from_city,
-           cidade_destino: to_city,
-           data_completa: date
+           user_id: user_id,
+           from_city: from_city,
+           to_city: to_city,
+           date: date
          },
          from_date,
          to_date

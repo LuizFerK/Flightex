@@ -14,15 +14,15 @@ defmodule Flightex.Bookings.CreateBooking do
   defp handle_verification({:error, _reason} = error, _params), do: error
 
   defp handle_verification({:ok, %User{id: id}}, %{
-         data_completa: data_completa,
-         cidade_origem: cidade_origem,
-         cidade_destino: cidade_destino
+         date: date,
+         from_city: from_city,
+         to_city: to_city
        }) do
     {:ok, booking} =
       Booking.build(
-        NaiveDateTime.from_iso8601!("#{data_completa} 00:00:00"),
-        cidade_origem,
-        cidade_destino,
+        NaiveDateTime.from_iso8601!("#{date} 00:00:00"),
+        from_city,
+        to_city,
         id
       )
 
