@@ -1,7 +1,7 @@
 <br />
 
 <p align="center">
-  <img alt="Logo" src="./.github/logo.png" width="140px" />
+  <img alt="Logo" src="./.github/logo.png" width="120px" />
 </p>
 
 <h1 align="center" style="text-align: center;">Flightex</h1>
