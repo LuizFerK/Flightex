@@ -120,6 +120,7 @@ In case you don't have an SSH key on your GitHub account, you can clone the proj
 
 ### Elixir
 - Agent
+- Elixir UUID
 
 # :bug: Issues
 
